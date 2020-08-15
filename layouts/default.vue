@@ -1,10 +1,23 @@
 <template>
-  <div>
+  <div class="page">
+    <TopBar />
     <Nuxt />
   </div>
 </template>
 
+<script>
+import TopBar from '../components/TopBar'
+
+export default {
+  components: { TopBar }
+}
+</script>
+
 <style>
+.page {
+  height: 100vh;
+}
+
 html {
   font-family:
     'Source Sans Pro',

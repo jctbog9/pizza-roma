@@ -1,10 +1,15 @@
 <template>
   <div class="top-bar">
-    <img class="logo" src="/logo.png"/>
+    <div class="top-bar-left">
+      <img class="logo" src="/pizzaroma-logo.svg"/>
+    </div>
+    <div class="top-bar-content">
+      CASH ONLY
+    </div>
     <div class="top-bar-right">
-      <div class="nav-element">Home</div>
-      <div class="nav-element">Contact</div>
-      <div class="nav-element">Menu</div>
+      <nuxt-link to="/" class="nav-element">Home</nuxt-link>
+      <nuxt-link to="/menu" class="nav-element">Menu</nuxt-link>
+      <nuxt-link to="/contact" class="nav-element">Contact</nuxt-link>
     </div>
   </div>
 </template>
@@ -16,6 +21,10 @@ export default {
 </script>
 
 <style>
+.top-bar-content {
+  color: #ffffff;
+}
+
 .nav-element {
   display: flex;
   flex-direction: column;
@@ -28,7 +37,9 @@ export default {
 
 .logo {
   height: 90%;
-  margin-left: 10px;
+  padding: 5px;
+  margin: 5px;
+  height: 70px;
 }
 .top-bar {
   display: flex;
@@ -46,5 +57,10 @@ export default {
   flex-direction: row;
   justify-content: space-evenly;
   color: white;
+}
+
+.top-bar-left {
+  align-items: center;
+  width: 300px;
 }
 </style>

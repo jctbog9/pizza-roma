@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <TopBar />
-    <Nuxt />
+    <Nuxt class="content"/>
     <BottomBar />
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style>
-.page {
+.content {
   min-height: 100vh;
 }
 

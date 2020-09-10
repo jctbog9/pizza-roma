@@ -2,20 +2,22 @@
   <div class="page">
     <TopBar />
     <Nuxt />
+    <BottomBar />
   </div>
 </template>
 
 <script>
 import TopBar from '../components/TopBar'
+import BottomBar from '../components/BottomBar'
 
 export default {
-  components: { TopBar }
+  components: { TopBar, BottomBar }
 }
 </script>
 
 <style>
 .page {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 html {

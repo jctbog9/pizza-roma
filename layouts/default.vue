@@ -74,4 +74,13 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+.custom-button {
+  padding: 20px;
+  background-color: #2151A1;
+  border: none;
+  color: #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
 </style>

@@ -6,8 +6,24 @@
           <img src="joe1.jpg">
         </div>
         <div class="CTA-content">
-          Joe has been serving pizzas in Watertown for over 40 years and has enjoyed every minute of it! He loves engaging with the community and always gets excited to see friendly faces returning for some more Pizza Roma!
-          <button class="custom-button">Order Now!</button>
+          Pizza Roma
+          <div class="location-info">
+            <div>
+              <font-awesome-icon icon="map-marker-alt"/> 212 Waverley Ave, Watertown, MA 02472
+            </div>
+            <div>
+              <font-awesome-icon icon="phone"/> (617) 924-9595
+            </div>
+            <div><font-awesome-icon icon="calendar"/> Hours:</div>
+            <div>Monday 10AM - 10PM</div>
+            <div>Tuesday 10AM - 10PM</div>
+            <div>Wednesday 10AM - 10PM</div>
+            <div>Thursday 10AM - 10PM</div>
+            <div>Friday 10AM - 10PM</div>
+            <div>Saturday 10AM - 10PM</div>
+            <div>Sunday 10AM - 10PM</div>
+          </div>
+          <button class="custom-button">Order Now</button>
         </div>
       </div>
       <div class="featured-image">
@@ -38,7 +54,7 @@ export default {}
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   overflow: hidden;
 }
 

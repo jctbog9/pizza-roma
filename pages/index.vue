@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div class="white-wrapper">
     <div class="page-content">
       <div class="contact-info">
         <div>
@@ -23,13 +23,8 @@ export default {
 </script>
 
 <style>
-.page {
-  background-image: image('../static/inside2.jpg');
-}
-
 .contact-info {
   width: 100%;
-  height: 50vh;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -49,7 +44,6 @@ export default {
   justify-content: center;
   height: 450px;
   overflow: hidden;
-  margin-bottom: 20px;
 }
 
 .image-content {

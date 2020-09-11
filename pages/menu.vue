@@ -1,10 +1,10 @@
 <template>
   <div class="food-menu">
     <div class="title-section">
-      <h1>Menu</h1>
+      <h1 class="cursive">Menu</h1>
       <h4><font-awesome-icon icon="phone"/> (617) 924-9595</h4>
     </div>
-    <h3 class="full-width">Hot Subs</h3>
+    <h2 class="full-width cursive subject">Hot Subs</h2>
     <div class="food-section full-width">
       <div class="food-item">
         <h4>Plain</h4>
@@ -79,7 +79,7 @@
         <div>S - $7.15 L - $7.50</div>
       </div>
     </div>
-    <h3 class="full-width">Cold Subs</h3>
+    <h2 class="full-width cursive subject">Cold Subs</h2>
     <div class="food-section full-width">
       <div class="food-item">
         <h4>Italian</h4>
@@ -122,7 +122,7 @@
         <div>S - $8.50</div>  
       </div>
     </div>
-    <h3 class="full-width">Calzones</h3>
+    <h2 class="full-width cursive subject">Calzones</h2>
     <div class="food-section full-width">
       <div class="food-item">
         <h4>Meat</h4>
@@ -133,7 +133,7 @@
         <div>$6.99</div>  
       </div>
     </div>
-    <h3 class="full-width">Salads</h3>
+    <h2 class="full-width cursive subject">Salads</h2>
     <div class="food-section full-width">
       <div class="food-item">
         <h4>Garden</h4>
@@ -164,7 +164,7 @@
         <div>$.75</div>  
       </div>
     </div>
-    <h3 class="full-width">Sides</h3>
+    <h2 class="full-width cursive subject">Sides</h2>
     <div class="food-section full-width">
       <div class="food-item">
         <h4>Lasagna</h4>
@@ -179,7 +179,7 @@
         <div>$6.99</div>  
       </div>
     </div>
-    <h3 class="full-width">Extras</h3>
+    <h2 class="full-width cursive subject">Extras</h2>
     <div class="food-section full-width">
       <div class="food-item">
         <h4>Meatballs</h4>
@@ -205,6 +205,16 @@ export default {
 </script>
 
 <style>
+.subject {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: #f3e19f;
+}
+
+.cursive {
+  font-family: 'Dancing Script', cursive;
+}
+
 .food-menu {
   width: 80%;
   margin: auto;
@@ -216,13 +226,11 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border-bottom: 1px solid black;
 }
 
 .food-item {
-  padding: 10px;
+  padding: 20px;
   margin: 10px;
-  border: 1px solid black;
 }
 
 .title-section {
@@ -230,13 +238,13 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 85px;
+  height: 95px;
   background-color: #E0BB34;
   width: 100%;
 }
 
 .full-width {
-  padding: 0px 10px 20px 10px;
+  padding: 0px 10px;
   width: 100%;
 }
 </style>

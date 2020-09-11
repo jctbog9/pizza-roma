@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <TopBar />
-    <Nuxt class="content"/>
+    <Nuxt class="content" />
     <BottomBar />
   </div>
 </template>
@@ -16,6 +16,16 @@ export default {
 </script>
 
 <style>
+.white-wrapper {
+  background-color: #ffffff;
+}
+
+.page {
+  background-image: url('/vegas.jpg');
+  background-attachment: fixed;
+  background-position: center;
+}
+
 .content {
   min-height: 100vh;
 }

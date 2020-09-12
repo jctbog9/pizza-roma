@@ -33,6 +33,11 @@ export default {
   height: 75px;
   width: 100px;
   font-size: 16px;
+  color: #ffffff;
+}
+
+.nav-element:hover {
+  background-color: #22242c;
 }
 
 .logo {
@@ -49,6 +54,7 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  opacity: 0.99;
 }
 
 .top-bar-right {

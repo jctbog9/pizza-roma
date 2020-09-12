@@ -3,7 +3,7 @@
     <div class="carousel-container">
       <img :src="slides[slide]">
     </div>
-    <div class="arrows">
+    <div class="mobile-arrows">
       <div class="arrow" v-on:click="previousPage">
         <font-awesome-icon size="3x" icon="arrow-alt-circle-left"/>
       </div>
@@ -30,7 +30,7 @@ import Image4 from '../static/sub.jpg'
 import Image5 from '../static/joe-work.jpg'
 
 export default {
-  name: 'Carousel',
+  name: 'MobileCarousel',
   data() {
     return {
       slide: 0,
@@ -77,13 +77,12 @@ export default {
   align-items: center;
   padding: 20px;
   height: 100%;
-  background-color: #DDB833;
-  color: #000000;
+  background-color: rgb(115, 115, 167);
 }
 
 .arrow:hover {
   cursor: pointer;
-  background-color: #d3965e;
+  background-color: rgb(77, 77, 122);
 }
 
 .counter {
@@ -102,26 +101,27 @@ export default {
   padding-bottom: 10px;
 }
 
-.arrows {
+.mobile-arrows {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  height: 500px;
-  width: 1100px;
-  margin: 30px 0px;
+  height: 250px;
+  width: 375px;
   z-index: 999;
   position: relative;
+  margin-top: 10px;
+  color: #000000;
 }
 
 .carousel-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 500px;
-  width: 1100px;
+  height: 250px;
+  width: 375px;
   overflow: hidden;
-  margin: 30px 0px;
   position: absolute;
+  margin-top: 10px;
 }
 </style>

@@ -58,6 +58,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/bulma'
   ],
   /*
   ** Build configuration

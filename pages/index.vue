@@ -1,11 +1,16 @@
 <template>
   <div>
-    <div class="page-content">
+    <div class="mobile-layout is-hidden-desktop">
+      <img class="image" src="joe1.jpg">
+      <contact-info />
+      <mobile-carousel />
+    </div>
+    <div class="page-content is-hidden-mobile">
       <div class="contact-info">
-        <div>
+        <div class="image">
           <img src="joe1.jpg">
         </div>
-        <contact-info/>
+        <contact-info />
       </div>
       <div class="featured-image">
         <carousel />
@@ -17,17 +22,30 @@
 <script>
 import ContactInfo from '../components/ContactInfo'
 import Carousel from '../components/Carousel'
+import MobileCarousel from '../components/MobileCarousel'
 
 export default {
-  components: { ContactInfo, Carousel }
+  components: { ContactInfo, Carousel, MobileCarousel }
 }
 </script>
 
 <style>
+.image {
+  margin: 0px 0px 10px 0px;
+}
+
+.mobile-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact-info {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   flex-direction: row;
   padding: 40px 0px 50px 0px;
   overflow: hidden;

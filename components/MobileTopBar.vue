@@ -1,15 +1,8 @@
 <template>
   <div class="top-bar">
-    <div class="top-bar-left">
-      <img class="logo" src="/pizzaroma-logo.svg"/>
-    </div>
-    <div class="top-bar-content">
-      CASH ONLY
-    </div>
+    <img class="logo" src="/pizzaroma-logo.svg"/>
     <div class="top-bar-right">
-      <nuxt-link to="/" class="nav-element">Home</nuxt-link>
-      <nuxt-link to="/menu" class="nav-element">Menu</nuxt-link>
-      <nuxt-link to="/contact" class="nav-element">Contact</nuxt-link>
+      <font-awesome-icon icon="bars" />
     </div>
   </div>
 </template>
@@ -41,10 +34,9 @@ export default {
 }
 
 .logo {
-  height: 90%;
   padding: 5px;
   margin: 5px;
-  height: 70px;
+  height: 65px;
 }
 .top-bar {
   display: flex;
@@ -58,10 +50,7 @@ export default {
 }
 
 .top-bar-right {
-  width: 300px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  margin: 20px;
   color: white;
 }
 

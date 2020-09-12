@@ -1,6 +1,7 @@
 <template>
   <div class="page">
-    <TopBar />
+    <TopBar class="is-hidden-touch"/>
+    <MobileTopBar class="is-hidden-desktop"/>
     <Nuxt class="content" />
     <BottomBar />
   </div>
@@ -30,6 +31,7 @@ export default {
 
 .content {
   min-height: 100vh;
+  margin-bottom: 0px !important;
 }
 
 html {

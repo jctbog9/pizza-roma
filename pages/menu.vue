@@ -245,7 +245,6 @@ export default {
   width: 80%;
   margin: auto;
   background-color: #ffffff;
-  opacity: 0.98;
 }
 
 .food-section {

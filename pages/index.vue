@@ -1,5 +1,5 @@
 <template>
-  <div class="white-wrapper">
+  <div>
     <div class="page-content">
       <div class="contact-info">
         <div>
@@ -28,26 +28,28 @@ export default {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  margin-bottom: 50px;
+  padding: 40px 0px 50px 0px;
   overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .page-content {
   width: 100%;
   min-height: 60vh;
-  padding-top: 20px;
 }
 
 .featured-image {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 450px;
   overflow: hidden;
+  background-color: #ffffff;
 }
 
 .image-content {
-  width: 1050px;
+  margin: 50px 0px;
+  height: 576px;
+  width: 1024px;
   overflow: hidden;
 }
 </style>

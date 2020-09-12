@@ -89,11 +89,17 @@ html {
 
 .custom-button {
   padding: 20px;
-  background-color: #2151A1;
+  background-color: #DDB833;
   border: none;
-  color: #ffffff;
+  color: #000000;
   border-radius: 2px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.custom-button:hover {
+  background-color: #d3965e;
 }
 
 </style>

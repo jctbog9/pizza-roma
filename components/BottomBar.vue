@@ -19,6 +19,7 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  color: #969393;
 }
 
 

@@ -8,7 +8,7 @@
         <contact-info/>
       </div>
       <div class="featured-image">
-        <img class="image-content" src="/inside2.jpg">
+        <carousel />
       </div>
     </div>
   </div>
@@ -16,9 +16,10 @@
 
 <script>
 import ContactInfo from '../components/ContactInfo'
+import Carousel from '../components/Carousel'
 
 export default {
-  components: { ContactInfo }
+  components: { ContactInfo, Carousel }
 }
 </script>
 

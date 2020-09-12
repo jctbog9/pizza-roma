@@ -226,11 +226,13 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: 40px;
 }
 
 .food-item {
   padding: 20px;
   margin: 10px;
+  width: 30%;
 }
 
 .title-section {

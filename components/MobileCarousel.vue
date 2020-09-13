@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div style="width: 100%">
     <div class="carousel-container">
-      <img :src="slides[slide]">
+      <img :src="slides[slide]" style="height: 100%">
     </div>
     <div class="mobile-arrows">
       <div class="arrow" v-on:click="previousPage">
-        <font-awesome-icon size="3x" icon="arrow-alt-circle-left"/>
+        <font-awesome-icon size="2x" icon="arrow-alt-circle-left"/>
       </div>
       <div class="counter">
         <div class="counters-container">
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="arrow" v-on:click="nextPage">
-        <font-awesome-icon size="3x" icon="arrow-alt-circle-right"/>
+        <font-awesome-icon size="2x" icon="arrow-alt-circle-right"/>
       </div>
     </div>
   </div>
@@ -98,7 +98,7 @@ export default {
   flex-direction: row;
   justify-content: space-evenly;
   width: 100px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .mobile-arrows {
@@ -107,7 +107,7 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   height: 250px;
-  width: 375px;
+  width: 100%;
   z-index: 999;
   position: relative;
   margin-top: 10px;
@@ -119,9 +119,10 @@ export default {
   align-items: center;
   justify-content: center;
   height: 250px;
-  width: 375px;
+  width: 100%;
   overflow: hidden;
   position: absolute;
   margin-top: 10px;
+  background-color: #ffffff;
 }
 </style>

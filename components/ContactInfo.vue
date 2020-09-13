@@ -31,7 +31,7 @@ export default {
 .CTA-content {
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: 300px;
   height: 520px;
   justify-content: space-evenly;
   background-color: #706f6b;

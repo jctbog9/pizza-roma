@@ -77,13 +77,13 @@ export default {
   align-items: center;
   padding: 20px;
   height: 100%;
-  background-color: #DDB833;
+  background-color: rgb(115, 115, 167);
   color: #000000;
 }
 
 .arrow:hover {
   cursor: pointer;
-  background-color: #d3965e;
+  background-color: rgb(77, 77, 122);
 }
 
 .counter {
@@ -108,7 +108,7 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   height: 500px;
-  width: 1100px;
+  width: 1024px;
   margin: 30px 0px;
   z-index: 999;
   position: relative;
@@ -119,7 +119,7 @@ export default {
   align-items: center;
   justify-content: center;
   height: 500px;
-  width: 1100px;
+  width: 1024px;
   overflow: hidden;
   margin: 30px 0px;
   position: absolute;

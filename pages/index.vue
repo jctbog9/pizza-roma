@@ -5,7 +5,7 @@
       <contact-info />
       <mobile-carousel />
     </div>
-    <div class="page-content is-hidden-mobile">
+    <div class="page-content is-hidden-touch">
       <div class="contact-info">
         <div class="image">
           <img src="joe1.jpg">

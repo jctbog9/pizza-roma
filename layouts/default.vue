@@ -2,11 +2,11 @@
   <div class="page">
     <TopBar class="is-hidden-touch"/>
     <MobileTopBar class="is-hidden-desktop"/>
-    <div v-if="showMobileNav">
-      <MobileNavigationMenu />
+    <div v-if="!showMobileNav">
+      <Nuxt class="content" />
     </div>
     <div v-else>
-      <Nuxt class="content" />
+      <MobileNavigationMenu />
     </div>
     <BottomBar />
   </div>

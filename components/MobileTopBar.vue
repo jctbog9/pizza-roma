@@ -1,15 +1,27 @@
 <template>
   <div class="top-bar">
-    <img class="logo" src="/pizzaroma-logo.svg"/>
+    <nuxt-link to="/">
+      <img class="logo" src="/pizzaroma-logo.svg"/>
+    </nuxt-link>
     <div class="top-bar-right">
-      <font-awesome-icon icon="bars" />
+      <font-awesome-icon v-if="!showMobileNav" icon="bars" v-on:click="handleShowNav"/>
+      <font-awesome-icon v-else icon="times" v-on:click="handleShowNav"/>
     </div>
   </div>
 </template>
 
 <script>
+import { mapMutations, mapActions, mapState } from 'vuex'
+
 export default {
-  name: 'TopBar'
+  name: 'TopBar',
+  computed: {
+    ...mapState(['showMobileNav'])
+  },
+  methods: {
+    ...mapMutations(['openMobileNav', 'closeMobileNav']),
+    ...mapActions(['handleShowNav'])
+  }
 }
 </script>
 
@@ -29,10 +41,6 @@ export default {
   color: #ffffff;
 }
 
-.nav-element:hover {
-  background-color: #22242c;
-}
-
 .logo {
   padding: 5px;
   margin: 5px;
@@ -42,11 +50,10 @@ export default {
   display: flex;
   height: 75px;
   width: 100%;
-  background-color: #191A21;
+  background-color: #1e1f25;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  opacity: 0.99;
 }
 
 .top-bar-right {

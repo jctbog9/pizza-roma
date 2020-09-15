@@ -2,17 +2,25 @@
   <div class="page">
     <TopBar class="is-hidden-touch"/>
     <MobileTopBar class="is-hidden-desktop"/>
-    <Nuxt class="content" />
+    <div v-if="showMobileNav">
+      <MobileNavigationMenu />
+    </div>
+    <div v-else>
+      <Nuxt class="content" />
+    </div>
     <BottomBar />
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import TopBar from '../components/TopBar'
 import BottomBar from '../components/BottomBar'
+import MobileNavigationMenu from '../components/MobileNavigationMenu'
 
 export default {
-  components: { TopBar, BottomBar }
+  components: { TopBar, BottomBar, MobileNavigationMenu },
+  computed: mapState(['showMobileNav'])
 }
 </script>
 
@@ -32,6 +40,7 @@ export default {
 .content {
   min-height: 100vh;
   margin-bottom: 0px !important;
+  position: relative;
 }
 
 html {

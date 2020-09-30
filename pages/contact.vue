@@ -54,7 +54,6 @@ export default {
 .contact-section {
   display: flex;
   flex-direction: row;
-  margin: auto;
   justify-content: space-evenly;
   padding: 40px;
 }

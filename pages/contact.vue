@@ -5,24 +5,23 @@
       <h4><font-awesome-icon icon="phone"/> (617) 924-9595</h4>
     </div>
     <div class="contact-section">
-        <div class="outside-image">
-          <img src="outside2.jpg">
-        </div>
-        <div class="store-info-section">
-          <contact-info />
-        </div>
+      <div class="outside-image">
+        <img src="outside2.jpg">
+      </div>
+      <div class="store-info-section">
+        <contact-info />
+      </div>
     </div>
     <div class="call-section">
-      <div class="order">
-        <a :href="`tel:${6179249595}`">
-          <div class='phone-number'> 
-            <font-awesome-icon icon="phone"/> (617) 924-9595 
-          </div>
-        </a>
+      <div class="store-rules">
+        <h1>No Delivery</h1>
       </div>
-      <a :href="`tel:${6179249595}`">
-        <button class="call-button">Call Now</button>
+      <a class="phone-number" :href="`tel:${6179249595}`">
+        <font-awesome-icon icon="phone"/> (617) 924-9595 
       </a>
+      <div class="store-rules">
+        <h1>Cash Only</h1>
+      </div>
     </div>
   </div>
 </template>
@@ -31,7 +30,7 @@
 import ContactInfo from '../components/ContactInfo'
 
 export default {
-
+  components: { ContactInfo }
 }
 </script>
 
@@ -40,17 +39,15 @@ export default {
   background-color: #ffffff;
   width: 80%;
   margin: auto;
-  margin-bottom: 50px;
 }
 
 .title {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   height: 120px;
   background-color: #E0BB34;
-  margin: auto;
   font-size: 16px;
 }
 
@@ -59,51 +56,29 @@ export default {
   flex-direction: row;
   margin: auto;
   justify-content: space-evenly;
-  height: 680px;
+  padding: 40px;
 }
 
 .outside-image {
-  height: 480px;
-  width: 390px;
-  margin: 40px 0px 0px 40px;
-}
-
-.store-info-section {
-  margin: 40px 40px 0px 0px;
+  width: 320px;
 }
 
 .call-section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 40px;
 }
 
-.order {
-  margin: auto;
-  justify-content: center;
-  align-items: center;
+.store-rules {
+  animation: blinker 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+}
+@keyframes blinker { to { opacity: 0; }
 }
 
 .phone-number {
-  font-size: 23px;
+  font-size: 24px;
   color: #000000;
-}
-
-.call-button {
-  margin: 15px 0px 45px 0px;
-  padding: 20px;
-  background-color: #DDB833;
-  border: none;
-  color: #000000;
-  border-radius: 2px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.cursive {
-  font-family: 'Dancing Script', cursive;
 }
 
 </style>

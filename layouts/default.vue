@@ -113,4 +113,8 @@ html {
   background-color: #d3965e;
 }
 
+.cursive {
+  font-family: 'Dancing Script', cursive;
+}
+
 </style>

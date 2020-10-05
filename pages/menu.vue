@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="is-hidden-mobile food-menu">
+    <div class="is-hidden-touch food-menu">
       <div class="title-section">
         <h1 class="cursive">Menu</h1>
         <h4><font-awesome-icon icon="phone"/> (617) 924-9595</h4>

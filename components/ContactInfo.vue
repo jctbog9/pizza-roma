@@ -17,7 +17,9 @@
       <div>Saturday 10AM - 10PM</div>
       <div>Sunday 10AM - 10PM</div>
     </div>
-    <button class="custom-button">Order Now</button>
+    <a :href="`tel:${6179249595}`">
+      <button class="custom-button">Order Now</button>
+    </a>
   </div>
 </template>
 

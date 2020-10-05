@@ -31,6 +31,10 @@ export default {
   background-color: #ffffff;
 }
 
+.content h1 {
+  margin-bottom: 0px;
+}
+
 .page {
   background-image: url('/vegas.jpg');
   background-attachment: fixed;
@@ -107,10 +111,19 @@ html {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+  width: 260px;
 }
 
 .custom-button:hover {
   background-color: #d3965e;
+}
+
+.cursive {
+  font-family: 'Dancing Script', cursive;
+}
+
+.bottom-buffer {
+  margin-bottom: 40px;
 }
 
 </style>

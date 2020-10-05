@@ -1,7 +1,9 @@
 <template>
   <div class="top-bar">
     <div class="top-bar-left">
-      <img class="logo" src="/pizzaroma-logo.svg"/>
+      <nuxt-link to="/">
+        <img class="logo" src="/pizzaroma-logo.svg"/>
+      </nuxt-link>
     </div>
     <div class="top-bar-content">
       CASH ONLY

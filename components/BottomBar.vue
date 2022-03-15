@@ -1,6 +1,6 @@
 <template>
   <div class="bottom-bar">
-    &copy; Pizza Roma 2020
+    &copy; Pizza Roma 2022
   </div>
 </template>
 
